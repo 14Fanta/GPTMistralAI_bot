@@ -8,7 +8,7 @@ from aiogram.fsm.context import FSMContext
 import sqlite3
 #OTHERS
 from dotenv import load_dotenv
-from config import TOKEN_TG
+from config import TOKEN_TG, MISTRAL_TOKEN
 from states import *
 #Mistral
 from mistralai import Mistral
@@ -16,7 +16,7 @@ from mistralai import Mistral
 
 load_dotenv()
 
-api_key = os.environ['Mistral_Key_api']
+api_key = MISTRAL_TOKEN
 
 model = "mistral-large-latest"
 
